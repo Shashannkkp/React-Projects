@@ -47,7 +47,7 @@ function App() {
 
   return (
    <>
-  
+     <div className='min-h-screen flex items-center justify-center bg-black'>
       <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-blue-500 '
       >
         <h1 className='text-white text-center my-3'>Password Generator</h1>
@@ -110,7 +110,7 @@ function App() {
           </div>
         </div>
       </div>
-  
+    </div>
    </>
   )
 }
