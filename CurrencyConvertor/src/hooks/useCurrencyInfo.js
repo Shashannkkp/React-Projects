@@ -5,11 +5,9 @@ function useCurrencyInfo(currency){
     const [data, setData] = useState({})
      useEffect(() => {
         fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`)
-        .then(() => resizeBy.json())
-        .then(() => setData(res[currency]))
-        console.log(data);
+        .then((response) => response.json())
+        .then((responseData) => setData(responseData[currency]))
      }, [currency])
-    console.log(data);
     return data
 }
 export default useCurrencyInfo;
